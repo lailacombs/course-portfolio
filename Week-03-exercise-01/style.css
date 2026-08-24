@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body {
+color: #030101;
+background-color: #FFFFFF;
+font-family: Georgia, serif;
+font-size: 20px;
+padding: 14px;
+margin: 22px;
+}
+
+.card {
+color: #f0f0f0;
+background-color: #be5264;
+font-family: Georgia, serif;
+font-size: 16px;
+padding: 30px;
+margin: 0 auto;
+max-width: 600px;
+border-width: 4px
+border-color: #dad1a1;
+}
+
+h1 {
+    color: #f0f0f0
+    font-size: 24px;
+    margin: 18px;
+}
+
+p {
+    color: #f0f0f0
+    font-size: 18px;
+    margin: 18px;
+}
