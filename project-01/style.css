@@ -1,0 +1,447 @@
+:root {
+    --sage: #99B4AA;
+    --olive: #6B6D43;
+    --khaki: #ABA66F;
+    --terracotta: #CF7D65;
+    --blush: #E1B8A2;
+    --cream: #F2DEC7;
+    --logo-beige: #F3F0E7;
+
+    --white: #FFFFFF;
+    --dark: #3F4638;
+
+    --border: rgba(63, 70, 56, 0.20);
+    --shadow: 0 6px 18px rgba(63, 70, 56, 0.12);
+
+    --radius: 12px;
+}
+
+
+/* ---------- General Page ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    line-height: 1.7;
+    background-color: var(--cream);
+    color: var(--dark);
+}
+
+
+/* ---------- Header ---------- */
+
+.main-header {
+    background-color: var(--sage);
+    color: var(--white);
+    padding: 45px 24px;
+    text-align: center;
+
+    border-bottom: 6px solid var(--logo-beige);
+}
+
+.main-header h1 {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0;
+
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.main-header h1:hover {
+    color: var(--cream);
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    background-color: var(--white);
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: var(--olive);
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--terracotta);
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Main Content ---------- */
+
+main {
+    max-width: 1200px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+section h1 {
+    color: var(--olive);
+    font-size: 2.2rem;
+    font-weight: normal;
+
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+section h2 {
+    color: var(--olive);
+    font-size: 2.5rem;
+    font-weight: normal;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+}
+
+
+/* ---------- About Section ---------- */
+
+section:first-child {
+    background-color: var(--blush);
+
+    padding: 35px;
+    margin-bottom: 50px;
+
+    border-left: 6px solid var(--terracotta);
+    border-radius: var(--radius);
+}
+
+section:first-child p {
+    max-width: 850px;
+    margin-bottom: 0;
+}
+
+
+/* ---------- Skills ---------- */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 24px;
+    margin: 25px 0 60px;
+}
+
+.skills-card {
+    flex: 1 1 280px;
+
+    background-color: var(--white);
+
+    padding: 25px;
+
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--sage);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 25px rgba(63, 70, 56, 0.17);
+
+    border-top-color: var(--terracotta);
+}
+
+.skills-card h3 {
+    color: var(--olive);
+
+    font-size: 1.35rem;
+    font-weight: normal;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.skills-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+/* ---------- Projects ---------- */
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 28px;
+    margin: 25px 0 60px;
+}
+
+.projects-card {
+    flex: 1 1 320px;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.projects-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(63, 70, 56, 0.18);
+}
+
+.projects-card img {
+    width: 100%;
+    height: 210px;
+
+    object-fit: contain;
+    display: block;
+    background-color: var(--white);
+
+    border-bottom: 5px solid var(--sage);
+
+    transition:
+        transform 0.4s ease;
+}
+
+.projects-card:hover img {
+    transform: none;
+}
+
+.projects-card img[alt="ContentCure brand concept"] {
+    background-color: var(--logo-beige);
+}
+
+.projects-card h3 {
+    color: var(--olive);
+
+    font-size: 1.4rem;
+    font-weight: normal;
+
+    margin: 20px 24px 8px;
+}
+
+.projects-card p {
+    margin: 0 24px 28px;
+
+    font-size: 0.95rem;
+}
+
+
+/* ---------- Contact Button ---------- */
+
+.footer-button {
+    text-align: center;
+
+    margin: 25px 0 55px;
+}
+
+.footer-button a {
+    display: inline-block;
+
+    background-color: var(--terracotta);
+    color: var(--white);
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border: 2px solid var(--terracotta);
+    border-radius: 30px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.footer-button a:hover {
+    background-color: var(--olive);
+    border-color: var(--olive);
+
+    transform: translateY(-3px);
+}
+
+
+/* ---------- Footer ---------- */
+
+body > footer {
+    background-color: var(--olive);
+    color: var(--cream);
+
+    text-align: center;
+
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+body > footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+body > footer p:hover {
+    color: var(--blush);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (width >= 480px) {
+
+    .main-header h1 {
+        font-size: 3.4rem;
+    }
+
+    .skills-card {
+        flex-basis: 45%;
+    }
+
+    .projects-card {
+        flex-basis: 45%;
+    }
+}
+
+
+/* ---------- Desktop ---------- */
+
+@media (width >= 1024px) {
+
+    main {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .skills-card {
+        flex-basis: 30%;
+    }
+
+    .projects-card {
+        flex-basis: 30%;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (width < 480px) {
+
+    .main-header {
+        padding: 35px 18px;
+    }
+
+    .main-header h1 {
+        font-size: 2.3rem;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: 92%;
+        padding: 35px 0;
+    }
+
+    section:first-child {
+        padding: 25px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .skills-card,
+    .projects-card {
+        flex-basis: 100%;
+    }
+
+    .projects-card img {
+        height: 190px;
+    }
+}

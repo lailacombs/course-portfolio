@@ -62,10 +62,10 @@ button {
 }
 
 .button-01 {
-    background-color: #063e77;
+    background-color: #0066CC;
     color: #ffffff;
     padding: 16px 32px;
-    border: 2px solid #063e77;
+    border: 2px solid #0066CC;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -76,10 +76,10 @@ button {
 }
 
 .button-02 {
-    background-color: #32924f;
+    background-color: #0e6027;
     color: #ffffff;
     padding: 16px 32px;
-    border: 2px solid #32924f;
+    border: 2px solid #0e6027;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
