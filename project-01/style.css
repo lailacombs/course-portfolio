@@ -8,16 +8,13 @@
     --logo-beige: #F3F0E7;
 
     --white: #FFFFFF;
-    --dark: #3F4638;
+    --dark-brown: #3F4638;
 
     --border: rgba(63, 70, 56, 0.20);
     --shadow: 0 6px 18px rgba(63, 70, 56, 0.12);
 
     --radius: 12px;
 }
-
-
-/* ---------- General Page ---------- */
 
 * {
     box-sizing: border-box;
@@ -37,11 +34,8 @@ body {
     font-family: Georgia, serif;
     line-height: 1.7;
     background-color: var(--cream);
-    color: var(--dark);
+    color: var(--dark-brown);
 }
-
-
-/* ---------- Header ---------- */
 
 .main-header {
     background-color: var(--sage);
@@ -59,17 +53,13 @@ body {
     letter-spacing: 2px;
     margin: 0;
 
-    transition: color 0.3s ease,
-                transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .main-header h1:hover {
     color: var(--cream);
     transform: translateY(-2px);
 }
-
-
-/* ---------- Navigation ---------- */
 
 nav {
     background-color: var(--white);
@@ -83,7 +73,6 @@ nav ul {
     align-items: center;
     gap: 35px;
 
-    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -104,8 +93,6 @@ nav a:hover {
 }
 
 
-/* ---------- Main Content ---------- */
-
 main {
     max-width: 1200px;
     width: 90%;
@@ -113,9 +100,6 @@ main {
     margin: 0 auto;
     padding: 50px 0;
 }
-
-
-/* ---------- Headings ---------- */
 
 h1,
 h2,
@@ -145,9 +129,6 @@ section p {
     font-size: 1rem;
 }
 
-
-/* ---------- About Section ---------- */
-
 section:first-child {
     background-color: var(--blush);
 
@@ -163,8 +144,6 @@ section:first-child p {
     margin-bottom: 0;
 }
 
-
-/* ---------- Skills ---------- */
 
 .skills-grid {
     display: flex;
@@ -216,9 +195,6 @@ section:first-child p {
     font-size: 0.95rem;
     margin-bottom: 0;
 }
-
-
-/* ---------- Projects ---------- */
 
 .projects-grid {
     display: flex;
@@ -290,7 +266,6 @@ section:first-child p {
 }
 
 
-/* ---------- Contact Button ---------- */
 
 .footer-button {
     text-align: center;
@@ -327,9 +302,6 @@ section:first-child p {
     transform: translateY(-3px);
 }
 
-
-/* ---------- Footer ---------- */
-
 body > footer {
     background-color: var(--olive);
     color: var(--cream);
@@ -346,102 +318,4 @@ body > footer p {
     font-size: 0.9rem;
 
     transition: color 0.3s ease;
-}
-
-body > footer p:hover {
-    color: var(--blush);
-}
-
-
-/* =========================================
-   RESPONSIVE DESIGN
-   ========================================= */
-
-
-/* ---------- Tablet ---------- */
-
-@media (width >= 480px) {
-
-    .main-header h1 {
-        font-size: 3.4rem;
-    }
-
-    .skills-card {
-        flex-basis: 45%;
-    }
-
-    .projects-card {
-        flex-basis: 45%;
-    }
-}
-
-
-/* ---------- Desktop ---------- */
-
-@media (width >= 1024px) {
-
-    main {
-        padding-top: 65px;
-        padding-bottom: 65px;
-    }
-
-    .skills-card {
-        flex-basis: 30%;
-    }
-
-    .projects-card {
-        flex-basis: 30%;
-    }
-
-    section h1 {
-        font-size: 2.5rem;
-    }
-}
-
-
-/* ---------- Mobile ---------- */
-
-@media (width < 480px) {
-
-    .main-header {
-        padding: 35px 18px;
-    }
-
-    .main-header h1 {
-        font-size: 2.3rem;
-    }
-
-    nav ul {
-        gap: 18px;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-    }
-
-    main {
-        width: 92%;
-        padding: 35px 0;
-    }
-
-    section:first-child {
-        padding: 25px;
-    }
-
-    section h1 {
-        font-size: 2rem;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .skills-card,
-    .projects-card {
-        flex-basis: 100%;
-    }
-
-    .projects-card img {
-        height: 190px;
-    }
 }
