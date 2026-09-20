@@ -57,12 +57,12 @@ li {
 }
 
 a {
-  color: #0066CC;
+  color: #e48853;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #004499;
+  color: #e48853;
 }
 
 code {
@@ -100,7 +100,7 @@ code {
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
+  background-color: #e48853;
   color: #ffffff;
 }
 
@@ -140,22 +140,49 @@ code {
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  color: #e48853;
 }
 
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #976e6e;
+  padding: 0 32px;
+  box-shadow: 0 2px 4px rgba(53, 43, 34, 0.205);
+  z-index: 1000;
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
 
-.nav-custom li {}
+.nav-custom li {
+margin-bottom: 0;
+}
 
-.nav-custom a {}
+.nav-custom a {
+  display: block;
+  padding: 16px 0;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-.nav-custom a:hover {}
+.nav-custom a:hover {
+  color: #e48853;
+}
 
 @media (width >=480px) {}
 
